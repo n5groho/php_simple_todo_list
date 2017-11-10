@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<TITLE>Localhost Daniel</TITLE>
+<LINK href="https://fonts.googleapis.com/css?family=Roboto|Slabo+13px|Slabo+27px" rel="stylesheet">
+<SCRIPT src="script.js" type='text/javascript'></SCRIPT>
+<STYLE>
+body {
+	font-family: 'Slabo 27px', serif;
+}
+.box {
+	background-color: #ecf0f1;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 5px;
+	padding-bottom: 20px;
+	padding-left: 5px;
+	width: 40%;
+	//border-radius: 15px 50px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.box:hover {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#todo {
+	background-color: #edecf1;	
+}
+#completed {
+	background-color: #ecf1ed;
+}
+h2 {
+	text-align: center;
+}
+li {
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+}
+span {
+	text-align: center;
+	font-size: 75%;
+	float: right;
+	margin-right: 50px;
+	display: block;
+	height: 15px;
+	width: 20px;
+	border: 2px solid black;
+}
+.done {
+	width: 40px;
+	margin-right: 10px;
+}
+.edit {
+	width: 40px;
+	margin-right: 10px;
+}
+.del:hover {
+	color: red;
+	border-color: red;
+	box-shadow: 0 0 1px red;
+}
+.done:hover {
+	color: green;
+	border-color: green;
+	box-shadow: 0 0 1px green;	
+}
+.edit:hover {
+	color: blue;
+	border-color: blue;
+	box-shadow: 0 0 1px blue;
+}
+#new1 {
+	width: 50%;
+	margin-left: 25px;
+	margin-bottom: 25px;
+}
+#new2 {
+	float: right;
+	width: 25%;
+	margin-right: 50px;
+	margin-bottom: 25px;
+	background-color: #ecf0f1;
+	border: 2px solid black;
+}
+#new2:hover {
+	color: blue;
+	border-color: blue;
+	box-shadow: 0 0 1px blue;
+}
+#clear {
+	width: 25%;
+	background-color: #ecf0f1;
+	border: 2px solid black;
+	display: block;
+	margin: auto;
+}
+#clear:hover {
+	color: red;
+	border-color: red;
+	box-shadow: 0 0 1px red;
+}
+</STYLE>
+</HEAD>
+<BODY>
+<div  class="box" id="new">
+<h2>New Todo</h2>
+<input id="new1" type="text" name="task">
+<input id="new2" type="submit" name="sub" value="Add">
+</div>
+<div  class="box" id="todo">
+<h2 >Todo List</h2>
+<ul id="tasks">
+</ul>
+</div>
+<div  class="box" id="completed">
+<h2>Completed</h2>
+<input id="clear" type="submit" name="sub" value="Clear">
+<ul id="tasks2">
+</ul>
+</div>
+</BODY>
+</HTML>
